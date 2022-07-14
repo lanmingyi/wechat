@@ -1,0 +1,8 @@
+/node_modules
+/dist
+.idea/
+.vs/
+.gradle/
+.cxx/
+obj/
+*.iml

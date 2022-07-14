@@ -1,0 +1,17 @@
+<custom-header bgColor="bg-gradual-green" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">更新日志</view>
+</custom-header>
+<view class="cu-timeline">
+  <view class="cu-item text-green" wx:for="{{changeLogs}}" wx:for-item="log" wx:for-index="idx" wx:key="idx">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">{{log.tag}}</view>
+        <view class="cu-tag line-white">{{log.date}}</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view wx:for="{{log.key_points}}" wx:for-item="point" wx:for-index="pointIdx" wx:key="point">{{pointIdx+1}}. {{point}}</view>
+      </view>
+    </view>
+  </view>
+</view>

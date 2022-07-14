@@ -1,0 +1,5 @@
+{
+  "navigationBarTitleText": "计算机视觉",
+  "usingComponents": {
+    "MyTitle":"../../components/MyTitle/MyTitle"}
+}

@@ -1,0 +1,85 @@
+<view class="main">
+  <!-- 公共头部 -->
+  <MyTitle></MyTitle>
+  <!-- 首页导航 -->
+  <view class="nav_warp">
+    <!-- 自己滚动区域的组件 -->
+    <scroll-view class="nav" scroll-x>
+      <view bindtap="activeNav" data-index="{{index}}" class="nav_item {{index===currentIndexNav?'active':'active'}}" wx:for="{{navList}}" wx:key="index">
+        {{index}}
+        {{index==currnetIndexNav}}
+        {{currnetIndexNav}}
+        <!-- {{item.text}} -->
+        {{item}}
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 轮播图 -->
+  <view class="slides">
+    <swiper autoplay indicator-dots indicator-color="blue" indicator-active-color="black" circular interval="2000">
+      <!-- <swiper-item wx:for="{{swiperList}}" wx:key="index">
+        <navigator>
+          <image mode="widthFix" src="{{item.imgSrc}}"></image> 
+        </navigator>
+      </swiper-item> -->
+      <swiper-item>
+        <navigator>
+          <image mode="widthFix" src="../../images/1.jpg"></image> 
+        </navigator>
+      </swiper-item>
+      <swiper-item>
+        <navigator>
+          <image mode="widthFix" src="../../images/2.jpg"></image> 
+        </navigator>
+      </swiper-item>
+      <swiper-item>
+        <navigator>
+          <image mode="widthFix" src="../../images/3.jpg"></image> 
+        </navigator>
+      </swiper-item>
+      <swiper-item>
+        <navigator>
+          <image mode="widthFix" src="../../images/4.jpg"></image> 
+        </navigator>
+      </swiper-item>
+      <!-- <swiper-item>
+        <image mode="widthFix" src="../../images/4.jpg"></image> 
+      </swiper-item> -->
+    </swiper>
+  </view>
+
+  <view class="box">
+    <view class="title">人工智能</view>
+    <view class="textStyle01">
+      人工智能（Artificial Intelligence），英文缩写为AI。它是研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的一门新的技术科学。
+    </view>
+    ========================
+    <view class="textStyle02">
+      人工智能是计算机科学的一个分支，它企图了解智能的实质，并生产出一种新的能以人类智能相似的方式做出反应的智能机器，该领域的研究包括机器人、语言识别、图像识别、自然语言处理和专家系统等。人工智能从诞生以来，理论和技术日益成熟，应用领域也不断扩大，可以设想，未来人工智能带来的科技产品，将会是人类智慧的“容器”。人工智能可以对人的意识、思维的信息过程的模拟。人工智能不是人的智能，但能像人那样思考、也可能超过人的智能。
+    </view>
+  </view>
+
+
+  <!-- 导航 -->
+  <!-- navigate:保留当前页面，跳转到应用内的某个页面，但不能跳转到tabbar页面 -->
+  <navigator class="button-text" url="../index2/index" open-type="navigate">视频简介</navigator>
+  <!-- redirect:关闭当前页面，跳转到应用内的某个页面，但不能跳转到tabbar页面 -->
+  <!-- <navigator url="../index2/index" open-type="redirect">index2</navigator> -->
+  <!-- switchTab:跳转到tabBar页面，并关闭其他所有非tabbar页面 -->
+  <navigator class="button-text" url="../CV/index" open-type="switchTab">计算机视觉</navigator>
+  <navigator class="button-text" url="../SR/index" open-type="switchTab">语音识别</navigator>
+  <navigator class="button-text" url="../NLP/index" open-type="switchTab">自然语言处理</navigator>
+  <!-- reLaunch:关闭所有页面，打开到应用内的某个页面 -->
+  <!-- <navigator url="../index2/index" open-type="reLaunch">index2</navigator> -->
+
+
+  <!-- <navigator class="marginTop10">
+    <button class="weui-btn" type="primary">Access a camera</button>
+  </navigator>
+  <navigator class="marginTop10">
+    <button class="weui-btn">Take a photo</button>
+  </navigator> -->
+</view>
+
+
+

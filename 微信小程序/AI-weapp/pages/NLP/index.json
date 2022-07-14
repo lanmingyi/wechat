@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "自然语言处理",
+  "usingComponents": {
+    "MyTitle":"../../components/MyTitle/MyTitle"
+  }
+}

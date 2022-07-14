@@ -1,0 +1,63 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/CV/index",
+    "pages/SR/index",
+    "pages/edit/edit",
+    "pages/NLP/index",
+    "pages/index2/index",
+    "pages/getting-started/index",
+    "pages/mobilenet/mobilenet",
+    "pages/mobilenet_local/index",
+    "pages/save_local/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "AI应用",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#696969",
+    "selectedColor": "#FFFFFF",
+    "backgroundColor": "#000000",
+    "borderStyle":"white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/home_shade_48dp.png",
+        "selectedIconPath": "icons/home_white_48dp.png"
+      },
+      {
+        "pagePath": "pages/CV/index",
+        "text": "计算机视觉",
+        "iconPath": "icons/camera_shade_48dp.png",
+        "selectedIconPath": "icons/camera_white_48dp.png"
+      },
+      {
+        "pagePath": "pages/SR/index",
+        "text": "语音识别",
+        "iconPath": "icons/keyboard_voice_shade_48dp.png",
+        "selectedIconPath": "icons/keyboard_voice_white_48dp.png"
+      },
+      {
+        "pagePath": "pages/NLP/index",
+        "text": "自然语言处理",
+        "iconPath": "icons/language_shade_48dp.png",
+        "selectedIconPath": "icons/language_white_48dp.png"
+      }
+    ]
+  },
+  
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.3",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
